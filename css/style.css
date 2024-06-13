@@ -107,3 +107,16 @@ h2 {
 .offset-11 {
     margin-left: calc((100% / 12) * 1);
 }
+
+/*responsivity*/
+@media screen and (min-width: 576px) {
+    .col-1 {
+        flex-basis: calc((100% / 12) * 4);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .col-1 {
+        flex-basis: calc((100% / 12) * 3);
+    }
+}
