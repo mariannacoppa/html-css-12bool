@@ -21,7 +21,7 @@ h2 {
 [class*="col-"] {
     background-color: blue;
     border: 1px solid white;
-    height: 50px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,14 +109,9 @@ h2 {
 }
 
 /*responsivity*/
-@media screen and (min-width: 576px) {
-    .col-1 {
+@media screen and (max-width: 768px) {
+    .md {
+        width: calc((100% / 12) * 4);
         flex-basis: calc((100% / 12) * 4);
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .col-1 {
-        flex-basis: calc((100% / 12) * 3);
     }
 }
