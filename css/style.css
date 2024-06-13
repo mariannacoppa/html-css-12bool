@@ -111,7 +111,7 @@ h2 {
 /*responsivity*/
 @media screen and (max-width: 768px) {
     .md {
-        width: calc((100% / 12) * 4);
+        max-width: calc((100% / 12) * 4);
         flex-basis: calc((100% / 12) * 4);
     }
 }
